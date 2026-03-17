@@ -1,0 +1,43 @@
+HR Analytics Dashboard – Employee Attrition Overview
+This project provides insights into employee attrition and workforce trends using Power BI.
+The dashboard highlights key HR metrics to help organizations make data-driven decisions.
+
+🔑 Key Insights
+Attrition Rate: 14.65%
+
+Average Monthly Income: ₹6.54K
+
+Average Working Years: 7.3
+
+Overtime Analysis: Distribution of employees working overtime vs not
+
+Gender Distribution: Male vs Female ratio
+
+Job Roles: Employee count across roles (Sales Executive, Research Scientist, Laboratory Technician, etc.)
+
+Education Field: Employee distribution by Life Sciences, Medical, Marketing, Technical Degree, and Others
+
+📊 Visualizations
+Pie charts for Overtime and Gender
+
+Line chart for Monthly Income by Job Role
+
+Bar chart for Employee Count by Education Field
+
+Table for Employee Count by Job Role and Gender
+
+🚀 Tools Used
+Power BI for dashboard creation
+
+Excel/CSV datasets for HR employee data
+
+Data cleaning & transformation using Power Query
+
+🎯 Purpose
+This dashboard helps HR teams to:
+
+Identify attrition patterns
+
+Understand workforce demographics
+
+Support strategic HR planning
