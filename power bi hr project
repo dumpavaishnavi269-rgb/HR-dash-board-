@@ -153,7 +153,143 @@ screenshots for LinkedIn and portfolio.
 |---|---|
 | `hr_project_final_done_today.pbix` | Power BI dashboard file |
 | `README.md` | Project documentation |
+## 📊 Dashboard Overview
 
+**Title: HR Analytics Dashboard — Employee Attrition Overview**
+
+---
+
+## 🔢 KPI Cards (Top Row)
+
+| KPI Card | Value |
+|---|---|
+| Count of Employees | 43 |
+| Average Age | 39 |
+| Salary Hike % | 14.65% |
+| Average Monthly Income | ₹ 6.54K |
+| Avg Working Years | 7.3 |
+| Sum of Hourly Rate | ₹ 2.88K |
+
+---
+
+## 🎛️ Slicers (Filters) I Added
+
+| Slicer | Type | Options |
+|---|---|---|
+| Department | Checkbox | Human Resources, Research & Development, Sales |
+| Gender | Button | Male / Female |
+| Hourly Rate | Slider | ₹31 to ₹98 |
+| Performance Rating | Slider | 3 to 4 |
+| Job Level | Dropdown | All |
+| Job Satisfaction | Dropdown | All |
+| Attrition | Checkbox | Yes / No |
+
+---
+
+## 📈 Charts I Built
+
+### Chart 1 — Employees by Overtime (Donut Chart)
+- Visual: Donut Chart
+- Shows: How many employees work overtime vs not
+- Finding: 28 employees (65%) do NOT work overtime,
+  15 employees (34.9%) work overtime
+
+### Chart 2 — Employees by Gender (Pie Chart)
+- Visual: Pie Chart
+- Shows: Male vs Female employee distribution
+- Finding: Male = 69.77% | Female = 30.23%
+
+### Chart 3 — Employee ID vs Monthly Income by Job Role (Line Chart)
+- Visual: Line Chart
+- X-Axis: Job Role (Laboratory Technician, Manager,
+  Research Scientist, Healthcare Representative,
+  Sales Executive, Sales Representative,
+  Manufacturing Director, Research Director)
+- Y-Axis: Count of Employee ID + Sum of Monthly Income
+- Finding: Managers and Directors earn significantly
+  higher monthly income than other roles
+
+### Chart 4 — Employee Detail Table
+- Visual: Table
+- Columns: Count of Employee ID, Job Role, Gender,
+  Sum of Monthly Income
+- Shows row-level breakdown of all employees by role
+- Total Monthly Income shown: ₹ 2,81,395
+
+### Chart 5 — Employee Count & Education by Education Field (Bar Chart)
+- Visual: Horizontal Bar Chart
+- X-Axis: Count of Employee ID + Count of Education
+- Y-Axis: Education Field
+- Fields: Life Sciences, Medical, Marketing,
+  Technical, Other
+- Finding: Life Sciences has the highest employee count
+
+---
+
+## 📋 Steps I Followed
+
+**Step 1 — Loaded Dataset**
+Imported HR Employee Attrition dataset into Power BI
+Desktop using Get Data → Excel/CSV. Dataset had 1,470+
+employee records across 35 columns.
+
+**Step 2 — Cleaned Data in Power Query**
+Opened Transform Data → Power Query Editor.
+Checked nulls, fixed data types, cleaned categorical
+columns (Gender, Department, JobRole, Attrition).
+Clicked Close & Apply.
+
+**Step 3 — Created DAX Measures**
+Wrote 4 custom DAX measures:
+- Count of Employees
+- Average Age
+- Average Monthly Income = AVERAGE(MonthlyIncome)
+- Avg Working Years = AVERAGE(TotalWorkingYears)
+- Salary Hike % = AVERAGE(PercentSalaryHike)
+- Sum of Hourly Rate = SUM(HourlyRate)
+
+**Step 4 — Built 6 KPI Cards**
+Added Card visuals for each DAX measure.
+Placed all KPI cards in top row of dashboard.
+
+**Step 5 — Built Donut Chart (Employees by Overtime)**
+Added Donut Chart → dragged OverTime to Legend,
+Employee ID to Values. Shows Yes/No overtime split.
+
+**Step 6 — Built Pie Chart (Employees by Gender)**
+Added Pie Chart → dragged Gender to Legend,
+Employee ID count to Values.
+Result: Male 69.77% | Female 30.23%
+
+**Step 7 — Built Line Chart (Income by Job Role)**
+Added Line Chart → JobRole on X-axis,
+Monthly Income and Employee ID count on Y-axis.
+Used dual line to compare headcount vs income.
+
+**Step 8 — Built Table (Employee Detail)**
+Added Table visual → columns: Employee ID, JobRole,
+Gender, Sum of MonthlyIncome.
+Shows total income of ₹2,81,395 across all roles.
+
+**Step 9 — Built Bar Chart (Education Field Analysis)**
+Added Horizontal Bar Chart → EducationField on Y-axis,
+Count of Employee ID + Count of Education on X-axis.
+Life Sciences topped the chart.
+
+**Step 10 — Added 7 Slicers**
+Added slicers for: Department, Gender, HourlyRate (slider),
+PerformanceRating (slider), JobLevel, JobSatisfaction,
+Attrition (Yes/No). All charts update on every slicer click.
+
+**Step 11 — Formatted the Dashboard**
+Applied pink/purple colour theme throughout.
+Added borders and backgrounds to all visuals.
+Arranged layout: KPI cards top, slicers left,
+charts in centre and right.
+
+**Step 12 — Saved & Published**
+Saved as .pbix → took screenshot → posted on LinkedIn
+→ got 9,254+ impressions and 100+ likes 🔥
 ---
 
 ## 👩‍💻 Made By
@@ -161,8 +297,8 @@ screenshots for LinkedIn and portfolio.
 **Dumpa Vaishnavi** — Data Analyst
 📍 Hyderabad, India
 📧 dumpavaishnavi269@gmail.com
-🔗 [LinkedIn](https://linkedin.com/in/YOURLINK)
-🌐 [Portfolio](https://YOURPORTFOLIO.com)
+🔗 [LinkedIn](https://linkedin.com/in/dumpavaishnavi)
+🌐 [Portfolio](https://dumpavaishnavi.com)
 
 ---
 
