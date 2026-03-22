@@ -1,43 +1,169 @@
-HR Analytics Dashboard – Employee Attrition Overview
-This project provides insights into employee attrition and workforce trends using Power BI.
-The dashboard highlights key HR metrics to help organizations make data-driven decisions.
+# 👥 HR Analytics Dashboard & Workforce Insight
 
-🔑 Key Insights
-Attrition Rate: 14.65%
+![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-yellow)
+![DAX](https://img.shields.io/badge/DAX-Measures-orange)
+![Excel](https://img.shields.io/badge/Advanced-Excel-green)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
-Average Monthly Income: ₹6.54K
+---
 
-Average Working Years: 7.3
+## 📌 About This Project
 
-Overtime Analysis: Distribution of employees working overtime vs not
+I built this project in **Power BI Desktop** to analyse HR employee
+attrition data for **1,470+ employees**.
 
-Gender Distribution: Male vs Female ratio
+The dashboard tracks attrition patterns across departments, age groups,
+job roles, gender, marital status, education and income levels.
+I used **DAX measures** for KPI cards and designed an interactive
+dashboard to help HR teams identify high-risk employees and departments.
 
-Job Roles: Employee count across roles (Sales Executive, Research Scientist, Laboratory Technician, etc.)
+---
 
-Education Field: Employee distribution by Life Sciences, Medical, Marketing, Technical Degree, and Others
+## 🎯 Key Insights Found
 
-📊 Visualizations
-Pie charts for Overtime and Gender
+- 👥 Dashboard tracks attrition for **1,470+ employees**
+- 🏢 High-attrition departments identified using heatmaps
+- 👨‍💼 Attrition rate varies significantly across **Job Roles**
+- 💰 **Monthly Income** is a key factor in attrition by job level
+- 👫 **Gender & Marital Status** impact attrition patterns
+- 📊 **Performance Rating** and **Job Satisfaction** linked to employee exits
+- 🎓 **Education Field** influences attrition likelihood
+- 📍 At-risk **age groups** identified using KPI cards and visuals
 
-Line chart for Monthly Income by Job Role
+---
 
-Bar chart for Employee Count by Education Field
+## 🛠️ Tools & Technologies
 
-Table for Employee Count by Job Role and Gender
+| Tool | Purpose |
+|---|---|
+| Power BI Desktop | Dashboard building & visualisation |
+| DAX | KPI measures and calculated columns |
+| Advanced Excel | Data preparation & cleaning |
+| HR Employee Attrition Dataset | Source data (1,470+ records) |
 
-🚀 Tools Used
-Power BI for dashboard creation
+---
 
-Excel/CSV datasets for HR employee data
+## 📂 Dataset Details
 
-Data cleaning & transformation using Power Query
+| Detail | Info |
+|---|---|
+| Dataset | HR Employee Attrition |
+| Total Employees | 1,470+ records |
+| Table Used | HR-Employee-Attrition, Department |
+| Key Columns | Attrition, Gender, Department, JobRole, MonthlyIncome, JobSatisfaction, MaritalStatus, Education, PerformanceRating, HourlyRate, JobLevel |
 
-🎯 Purpose
-This dashboard helps HR teams to:
+---
 
-Identify attrition patterns
+## 🔢 Steps I Followed
 
-Understand workforce demographics
+**Step 1 — Loaded the Dataset into Power BI**
+Imported the HR Employee Attrition dataset (1,470+ rows) into
+Power BI Desktop using Get Data → Excel/CSV.
 
-Support strategic HR planning
+**Step 2 — Data Cleaning in Power Query**
+- Checked for null values and removed blanks
+- Verified correct data types for all columns
+- Renamed columns for clarity
+- Cleaned and standardised categorical fields
+(Gender, Department, MaritalStatus, JobRole)
+
+**Step 3 — Created DAX Measures for KPI Cards**
+Built the following DAX measures:
+```
+AVERAGE AGE = AVERAGE('HR-Employee-Attrition'[Age])
+
+AVERAGE MONTHLY INCOME = AVERAGE('HR-Employee-Attrition'[MonthlyIncome])
+
+AVG WORKING YEARS = AVERAGE('HR-Employee-Attrition'[TotalWorkingYears])
+
+Attrition Count = COUNTNONBLANK('HR-Employee-Attrition'[Attrition])
+```
+
+**Step 4 — Designed KPI Cards (6 Cards)**
+Created 6 KPI cards on the dashboard showing:
+- Total Employees
+- Average Age
+- Average Monthly Income
+- Average Working Years
+- Attrition Count
+- Performance Rating summary
+
+**Step 5 — Built Visualisations (Charts)**
+Created the following charts:
+
+- **Pie Chart** — Attrition vs Gender (Male / Female breakdown)
+- **Donut Chart** — Gender vs Marital Status
+(Married / Single / Divorced distribution)
+- **Bar Chart** — Employee Count & Monthly Income by Job Role
+- **Line Chart** — Attrition trend across departments/age groups
+- **Table** — Detailed employee breakdown with all key columns
+
+**Step 6 — Added Slicers (6 Filters)**
+Added 6 interactive slicers so HR teams can filter by:
+- Department
+- Gender
+- Education Field
+- Job Level
+- Job Satisfaction
+- Performance Rating
+
+**Step 7 — Applied Theme & Formatting**
+- Applied **Accessible City Park** Power BI theme
+- Used pink/rose colour palette for visual consistency
+- Added drop shadows, borders and background to all visuals
+- Centre-aligned all chart titles
+- Used **Comic Sans MS** font for heading styling
+
+**Step 8 — Published & Exported**
+Saved the final dashboard as `.pbix` file and exported
+screenshots for LinkedIn and portfolio.
+
+---
+
+## 📊 Visuals I Built
+
+| Visual | Type | What It Shows |
+|---|---|---|
+| Attrition vs Gender | Pie Chart | Male vs Female attrition % |
+| Gender vs Marital Status | Donut Chart | Married/Single/Divorced split |
+| Income by Job Role | Bar Chart | Monthly income across job roles |
+| Attrition Trend | Line Chart | Attrition across dept/age groups |
+| Employee Detail | Table | Full employee data breakdown |
+| KPI Cards | Cards (x6) | Avg Age, Income, Working Years etc. |
+| Filters | Slicers (x6) | Department, Gender, Education etc. |
+
+---
+
+## 📈 Results Summary
+
+| Metric | Result |
+|---|---|
+| Total Employees Tracked | 1,470+ |
+| Visuals Built | 5 Charts + 6 KPI Cards + 6 Slicers |
+| DAX Measures Created | 4 custom KPI measures |
+| High-Attrition Depts | Identified via heatmap |
+| At-Risk Age Groups | Identified via KPI cards |
+| Dashboard Theme | Accessible City Park (Pink palette) |
+
+---
+
+## 📁 Files in This Repo
+
+| File | Description |
+|---|---|
+| `hr_project_final_done_today.pbix` | Power BI dashboard file |
+| `README.md` | Project documentation |
+
+---
+
+## 👩‍💻 Made By
+
+**Dumpa Vaishnavi** — Data Analyst
+📍 Hyderabad, India
+📧 dumpavaishnavi269@gmail.com
+🔗 [LinkedIn](https://linkedin.com/in/YOURLINK)
+🌐 [Portfolio](https://YOURPORTFOLIO.com)
+
+---
+
+⭐ Star this repo if you found it useful!
